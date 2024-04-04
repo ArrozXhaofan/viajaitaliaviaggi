@@ -48,12 +48,12 @@ function Form() {
             </div>
 
             <div data-aos-delay="250" data-aos="fade-down-right" className="flex gap-3">
-                <div className="h-auto flex flex-col">
+                <div className="h-auto flex flex-col w-1/2">
                     <span className="select-none p-1">Fecha de salida</span>
                     <input type="date" name='dateSalida' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
                 </div>
 
-                <div data-aos-delay="300" className="w-full h-auto flex flex-col">
+                <div data-aos-delay="300" className="h-auto flex flex-col w-1/2">
                     <span className="select-none p-1">Fecha de retorno</span>
                     <input type="date" name='dateRetorno' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
                 </div>
