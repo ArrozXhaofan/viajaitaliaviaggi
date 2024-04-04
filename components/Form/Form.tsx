@@ -19,9 +19,11 @@ function Form() {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    alert("Tu solicitud se envio correctamente!")
                 },
                 (error:any) => {
                     console.log('FAILED...', error.text);
+                    alert("Hubo un error con los datos introducidos.")
                 },
             );
         }
@@ -34,28 +36,28 @@ function Form() {
 
             <div data-aos-delay="100" data-aos="fade-down-right" className="w-full h-auto flex flex-col">
                 <span className="select-none p-0.5">Nombres</span>
-                <input type="text" name='clientName' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                <input required type="text" name='clientName' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
             </div>
 
             <div data-aos-delay="150" data-aos="fade-down-right" className="w-full h-auto flex flex-col">
                 <span className="select-none p-1">Ciudad de salida</span>
-                <input type="text" name='cdSalida' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                <input required type="text" name='cdSalida' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
             </div>
 
             <div data-aos-delay="200" data-aos="fade-down-right" className="w-full h-auto flex flex-col">
                 <span className="select-none p-1">Ciudad de llegada</span>
-                <input type="text" name='cdDestino' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                <input required type="text" name='cdDestino' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
             </div>
 
             <div data-aos-delay="250" data-aos="fade-down-right" className="flex gap-3">
                 <div className="h-auto flex flex-col w-1/2">
                     <span className="select-none p-1">Fecha de salida</span>
-                    <input type="date" name='dateSalida' className="border min-h-7 border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                    <input required type="date" name='dateSalida' className="border min-h-7 border-white rounded-lg bg-transparent text-white px-4 py-2" />
                 </div>
 
                 <div data-aos-delay="300" className="h-auto flex flex-col w-1/2">
                     <span className="select-none p-1">Fecha de retorno</span>
-                    <input type="date" name='dateRetorno' className="border min-h-7 border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                    <input required type="date" name='dateRetorno' className="border min-h-7 border-white rounded-lg bg-transparent text-white px-4 py-2" />
                 </div>
             </div>
 
@@ -82,12 +84,12 @@ function Form() {
 
             <div data-aos-delay="400" data-aos="fade-down-right" className=" w-full h-auto flex flex-col">
                 <span className="select-none p-1">Telefono movil</span>
-                <input type="text" name='numTel' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                <input required type="text" name='numTel' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
             </div>
 
             <div data-aos-delay="450" data-aos="fade-down-right" className="w-full h-auto flex flex-col">
                 <span className="select-none p-1">Correo electronico</span>
-                <input type="email" name='email' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
+                <input required type="email" name='email' className="border border-white rounded-lg bg-transparent text-white px-4 py-2" />
             </div>
 
             <div data-aos-delay="500" data-aos="fade-down-right" className=" w-full h-auto flex flex-col">
