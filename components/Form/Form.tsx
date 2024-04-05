@@ -32,7 +32,7 @@ function Form() {
     return(
 
         <form  ref={form} onSubmit={sendEmail}
-            className="w-full h-full p-4 pt-1 flex flex-col gap-3 text-white text-xs md:max-w-xl md:translate-y-14 font-rale">
+            className="w-full h-auto p-4 pt-1 flex flex-col gap-3 text-white text-xs md:max-w-xl  font-rale">
 
             <div data-aos-delay="100" data-aos="fade-down-right" className="w-full h-auto flex flex-col">
                 <span className="select-none p-0.5">Nombres</span>
@@ -97,10 +97,10 @@ function Form() {
                 <textarea name='mesagge' className="border border-white rounded-lg bg-transparent text-white px-4 py-2 resize-none transition-colors duration-300 hover:bg-transparent hover:text-white hover:border-white" />
             </div>
 
-            <div data-aos-delay="550" data-aos="fade-down-right" className="w-full pt-4 flex justify-center select-none">
+            <div className="w-full pt-4 flex justify-center select-none">
                 <button type='submit'>
-                    <div className="flex justify-center items-center px-6 py-4 rounded-lg border-[0.1px]
-                        hover:scale-90 hover:bg-transparent hover:text-white duration-500 hover:border-white">
+                    <div className="flex justify-center items-center px-6 py-4 rounded-lg border-[0.1px] bg-white text-black
+                        hover:scale-90 hover:bg-transparent hover:text-white duration-300 hover:border-white">
                         <span className="select-none text-lg font-paci">Solicitar vuelo</span>
                     </div>
                 </button>
