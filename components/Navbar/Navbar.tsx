@@ -7,15 +7,11 @@ function Navbar() {
      
         <div className="
             h-14 flex justify-around items-center 
-            backdrop-blur-sm shadow-lg bg-black bg-opacity-10 
-            rounded-b-md z-50 ">
+            backdrop-blur-sm shadow-lg bg-white z-50 ">
 
-            <Image src={Logo} alt="vuelamilano" width={120} height={50} />
+            <img src="/logo3.png" className="h-16" alt="ViajeItaliaViaggi logo" />
 
-            <h1 className="text-white font-paci">Vuelaitaliaviaggi</h1>
-
-            
-
+            <span className="text-blue-900 font-paci">Vuelaitaliaviaggi</span>
         </div>
 
 

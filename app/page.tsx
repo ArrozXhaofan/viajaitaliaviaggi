@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
 
-      <div className="relative bg-cover bg-center w-full min-h-screen z-10" style={{ backgroundImage: `url(/fondo1.jpg)` }}>
+      <div className="relative bg-cover bg-center w-full min-h-screen z-10 min-w-72 bg-repeat-y" style={{ backgroundImage: `url(/fondo1.jpg)` }}>
       <div className="absolute inset-0 bg-black opacity-70 -z-10"></div>
 
         <Navbar/>
