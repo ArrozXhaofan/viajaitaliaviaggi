@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+
+      <Head>
+        <title>Tu Aplicación Next.js</title>
+        <link rel="icon" href="/logo2.png" />
+      </Head>
 
       <body className={inter.className}>
 
